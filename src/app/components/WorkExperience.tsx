@@ -68,7 +68,7 @@ interface CompanyLinkProps {
 function CompanyLink({ company, link }: CompanyLinkProps) {
   return (
     <a
-      className="text-sm font-semibold text-slate-900 hover:underline print:font-medium"
+      className="text-sm font-medium text-foreground/90 hover:underline print:font-medium"
       href={link}
       target="_blank"
       rel="noopener noreferrer"
@@ -95,7 +95,9 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
       <CardHeader className="print:space-y-0">
         <div className="flex items-center justify-between gap-x-2 text-base">
           <span className="text-md inline-flex items-center justify-center gap-x-1 font-semibold uppercase leading-none">
-            <h3 className="text-md font-bold leading-none">{title}</h3>
+            <h3 className="text-md font-bold leading-none text-foreground">
+              {title}
+            </h3>
             <BadgeList
               className="hidden gap-x-1 sm:inline-flex"
               badges={badges}
@@ -107,10 +109,10 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
       </CardHeader>
 
       <CardContent>
-        <div className="mt-2 text-pretty text-sm text-foreground/80 print:mt-1 print:text-[11px]">
+        <div className="mt-1 text-pretty text-sm text-foreground/85 print:mt-1 print:text-[11px]">
           {description}
         </div>
-        <div className="mt-2">
+        <div className="mt-1">
           <BadgeList
             className="-mx-2 flex-wrap gap-1 sm:hidden"
             badges={badges}
@@ -132,13 +134,13 @@ interface WorkExperienceProps {
 export function WorkExperience({ work }: WorkExperienceProps) {
   return (
     <Section>
-      <h2 className="text-2xl font-bold uppercase" id="work-experience">
-        Experience
+      <h2 className="text-2xl font-bold uppercase" id="experience">
+        Berufserfahrung
       </h2>
       <div
         className="space-y-4 print:space-y-0"
         role="feed"
-        aria-labelledby="work-experience"
+        aria-labelledby="experience"
       >
         {work.map((item) => (
           <article key={`${item.company}-${item.start}`} role="article">

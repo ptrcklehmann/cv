@@ -70,7 +70,7 @@ export function Education({ education }: EducationListProps) {
   return (
     <Section>
       <h2 className="text-2xl font-bold uppercase" id="education-section">
-        Education
+        Ausbildung
       </h2>
       <div
         className="space-y-4"

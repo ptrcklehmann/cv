@@ -59,21 +59,22 @@ type ResumeData = {
 export const RESUME_DATA: ResumeData = {
   name: "Patrick Lehmann",
   initials: "PL",
-  location: "Berlin, Germany CET",
+  location: "Berlin, Deutschland",
   locationLink: "https://www.google.com/maps/place/Berlin,+Germany",
-  about: "Frontend Developer",
+  about: "Frontend-Entwickler",
   summary: (
     <>
       <p>
-        Experienced Frontend Developer with over 5 years of hands-on experience
-        in React, Next.js, React Native, GraphQL, and TypeScript. Proven track
-        record of driving end-to-end product delivery at Code-B, translating
-        complex requirements into scalable web and mobile applications.
+        Erfahrener Frontend-Entwickler mit über fünf Jahren praktischer
+        Erfahrung in React, Next.js, React Native, GraphQL und TypeScript.
+        Nachweisliche Erfolge in der ganzheitlichen Umsetzung von Produkten bei
+        Code-B, dabei komplexe Anforderungen in skalierbare Web- und
+        Mobile-Applikationen übersetzt.
       </p>
       <p>
-        Passionate about creating cohesive visual identities and engaging user
-        experiences. In my free time, I enjoy exploring new technologies and
-        building creative, technically challenging projects.
+        Leidenschaft für konsistente visuelle Identitäten und ansprechende
+        Nutzererlebnisse. In meiner Freizeit erkunde ich neue Technologien und
+        realisiere kreative, technisch herausfordernde Projekte.
       </p>
     </>
   ),
@@ -98,7 +99,7 @@ export const RESUME_DATA: ResumeData = {
   education: [
     {
       school: "President Antônio Carlos University",
-      degree: "BSc in Systems Analysis and Development",
+      degree: "BSc in Systemanalyse und -entwicklung",
       start: "01.2006",
       end: "07.2011",
     },
@@ -114,58 +115,76 @@ export const RESUME_DATA: ResumeData = {
       company: "code-b",
       link: "https://code-b.com",
       badges: ["On Site", "TypeScript", "React", "Next.js", "React Native"],
-      title: "Frontend Developer",
+      title: "Frontend-Entwickler",
       logo: null,
       start: "06.2022",
       end: null,
       description: (
-        <ul className="list-inside list-disc">
-          <li className="mb-1">
-            Developed responsive and high-performing web and mobile
-            applications, significantly improving user engagement and
-            application efficiency using React, Next.js, React Native, and
-            TypeScript. Notable projects include thepioneer.de and
-            tabletop-herald.com.
+        <ul className="list-inside list-disc space-y-1">
+          <li>
+            Entwicklung responsiver, hochperformanter Web- und
+            Mobile-Anwendungen mit React, Next.js, React Native und TypeScript;
+            steigerte Nutzerengagement und Effizienz (u. a.{" "}
+            <a
+              className="underline hover:text-foreground/70"
+              href="https://thepioneer.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="The Pioneer"
+            >
+              thepioneer.de
+            </a>
+            ,{" "}
+            <a
+              className="underline hover:text-foreground/70"
+              href="https://tabletop-herald.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Tabletop Herald"
+            >
+              tabletop-herald.com
+            </a>
+            ).
           </li>
-          <li className="mb-1">
-            Streamlined CI/CD pipelines, notably improving deployment efficiency
-            and enhancing application stability through automated testing.
+          <li>
+            Optimierung von CI/CD-Pipelines durch automatisierte Tests, was zu
+            schnelleren Deployments und höherer Stabilität führte.
           </li>
-          <li className="mb-1">
-            Supported junior developers through mentorship and thorough code
-            reviews, fostering better practices and improving overall code
-            quality.
+          <li>
+            Mentoring von Junior-Entwicklern und Durchführung gründlicher
+            Code-Reviews zur Verbesserung von Best Practices und Code-Qualität.
           </li>
-          <li className="mb-1">
-            Managed projects from requirements gathering and architecture design
-            to deployment and ongoing improvements, ensuring alignment with
-            business goals and user needs.
+          <li>
+            Projektleitung von der Anforderungserfassung über Architekturdesign
+            bis hin zu Deployment und kontinuierlicher Weiterentwicklung in
+            Abstimmung mit Geschäfts- und Nutzerzielen.
           </li>
         </ul>
       ),
     },
     {
-      company: "Freelance",
+      company: "Selbstständig",
       link: "https://ptrcklehmann.com",
       badges: ["TypeScript", "React", "React Native", "GraphQL"],
-      title: "Full-Stack Developer",
+      title: "Freiberuflicher Full-Stack-Entwickler",
       logo: null,
       start: "05.2016",
       end: "05.2022",
       description: (
-        <ul className="list-inside list-disc">
-          <li className="mb-1">
-            Built, tested, and launched robust, scalable software solutions with
-            high availability, prioritizing reliability and peak performance
-            through modern development practices.
+        <ul className="list-inside list-disc space-y-1">
+          <li>
+            Konzeption, Implementierung, Test und Rollout robuster, skalierbarer
+            Softwarelösungen mit hoher Verfügbarkeit unter Nutzung moderner
+            Development-Practices.
           </li>
-          <li className="mb-1">
-            Consistently enhanced legacy systems, integrating new
-            functionalities and delivering innovative, user-centric applications
-            aligned closely with strategic business objectives.
+          <li>
+            Kontinuierliche Modernisierung von Altsystemen, Integration neuer
+            Features und Entwicklung nutzerzentrierter Anwendungen im Einklang
+            mit strategischen Unternehmenszielen.
           </li>
-          <li className="mb-1">
-            Managed client relationships and project timelines independently
+          <li>
+            Eigenständiges Management von Kundenbeziehungen und
+            Projektzeitplänen.
           </li>
         </ul>
       ),
@@ -174,26 +193,25 @@ export const RESUME_DATA: ResumeData = {
       company: "International Labour Organization",
       link: "https://www.ilo.org",
       badges: ["Remote", "Graphic Design", "UI/UX", "Frontend"],
-      title: "Graphic Designer & Frontend Developer",
+      title: "Grafikdesigner & Frontend-Entwickler",
       logo: null,
       start: "10.2019",
       end: "05.2022",
       description: (
-        <ul className="list-inside list-disc">
-          <li className="mb-1">
-            Created cohesive visual identities and UI designs for global reports
-            and events, significantly enhancing brand consistency and user
-            engagement for initiatives like Global Social Protection Week and
-            the Global Flagship Programme.
+        <ul className="list-inside list-disc space-y-1">
+          <li>
+            Gestaltung konsistenter visueller Identitäten und UI-Designs für
+            globale Reports und Events (z. B. Global Social Protection Week,
+            Global Flagship Programme), steigerte Markenwiedererkennung und
+            Nutzerengagement.
           </li>
-          <li className="mb-1">
-            Improved accessibility and modernized user experience for online
-            reports, meeting contemporary web standards and boosting user
-            interaction.
+          <li>
+            Verbesserung der Barrierefreiheit und Modernisierung der
+            Nutzererfahrung bei Online-Reports nach zeitgemäßen Web-Standards.
           </li>
-          <li className="mb-1">
-            Collaborated with stakeholders across multiple countries and time
-            zones
+          <li>
+            Zusammenarbeit mit Stakeholdern in verschiedenen Ländern und
+            Zeitzonen.
           </li>
         </ul>
       ),
@@ -202,24 +220,24 @@ export const RESUME_DATA: ResumeData = {
       company: "Efficient Signer and Print Ltd",
       link: "https://efficientsigns.com/",
       badges: ["Graphic Design", "Print", "Digital"],
-      title: "Graphic Designer",
+      title: "Grafikdesigner",
       logo: null,
       start: "01.2015",
       end: "12.2015",
       description: (
-        <ul className="list-inside list-disc ">
-          <li className="mb-1">
-            Designed impactful marketing packages, including compelling print
-            materials, brochures, banners, and signage, significantly improving
-            brand visibility and market presence.
+        <ul className="list-inside list-disc space-y-1">
+          <li>
+            Entwicklung wirkungsvoller Marketing-Packages (Printmaterialien,
+            Broschüren, Banner, Beschilderungen) zur Steigerung der
+            Markensichtbarkeit.
           </li>
-          <li className="mb-1">
-            Produced insightful trend boards and conducted market analysis to
-            identify emerging opportunities, enabling strategic business
-            decisions and capitalizing on industry shifts.
+          <li>
+            Erstellung von Trend-Boards und Marktanalysen zur Identifikation
+            neuer Chancen und zur Unterstützung strategischer Entscheidungen.
           </li>
-          <li className="mb-1">
-            Managed multiple design projects simultaneously with tight deadlines
+          <li>
+            Gleichzeitige Betreuung mehrerer Design-Projekte unter engen
+            Deadlines.
           </li>
         </ul>
       ),
