@@ -61,21 +61,17 @@ export const RESUME_DATA: ResumeData = {
   initials: "PL",
   location: "Berlin, Deutschland",
   locationLink: "https://www.google.com/maps/place/Berlin,+Germany",
-  about: "Frontend-Entwickler",
-  about: "Full-Stack Developer",
+  about: "Senior Frontend-Entwickler | React / Next.js",
   summary: (
     <>
       <p>
-        Experienced Full-Stack Developer with over 5 years of hands-on
-        experience in React, Next.js, React Native, GraphQL, and TypeScript.
-        Proven track record of driving end-to-end product delivery at code-b,
-        translating complex requirements into scalable web and mobile
-        applications.
-      </p>
-      <p>
-        Leidenschaft für konsistente visuelle Identitäten und ansprechende
-        Nutzererlebnisse. In meiner Freizeit erkunde ich neue Technologien und
-        realisiere kreative, technisch herausfordernde Projekte.
+        Erfahrener Frontend-Entwickler mit über fünf Jahren Expertise in der
+        Umsetzung hochperformanter, headless E-Commerce- und
+        Digital-Plattformen. Tiefgehende Kenntnisse in React, Next.js und
+        TypeScript sowie im Aufbau skalierbarer Architekturen. Bewährt in
+        technischer Führung, Code-Qualitätssicherung und agiler
+        Prozessgestaltung. Starke Mentoring-Erfahrung und proaktive Einbindung
+        von KI-Tools zur Effizienzsteigerung.
       </p>
     </>
   ),
@@ -123,25 +119,31 @@ export const RESUME_DATA: ResumeData = {
       description: (
         <ul className="list-inside list-disc space-y-0.5">
           <li>
-            Developed responsive and high-performing web and mobile
-            applications, significantly improving user engagement and
-            application efficiency using React, Next.js, React Native, and
-            TypeScript. Notable projects include thepioneer.de and
-            tabletop-herald.com.
+            Treffen fundierter Entscheidungen für Headless-Webanwendungen im
+            E-Commerce-Umfeld und Weiterentwicklung der Gesamtarchitektur.
           </li>
           <li>
-            Streamlined CI/CD pipelines, notably improving deployment efficiency
-            and enhancing application stability through automated testing.
+            Entwicklung skalierbarer Frontend-Konzepte, enge Abstimmung mit
+            Backend-Architektur und Solution Architecture.
           </li>
           <li>
-            Supported junior developers through mentorship and thorough code
-            reviews, fostering better practices and improving overall code
-            quality.
+            {" "}
+            Aufbau und Optimierung von GitLab-CI/CD-Pipelines mit
+            Docker-Containern; Automatisierung von Deployments und
+            Testing-Workflows.
           </li>
           <li>
-            Managed projects from requirements gathering and architecture design
-            to deployment and ongoing improvements, ensuring alignment with
-            business goals and user needs.
+            Etablierung von Code-Standards, Durchführung regelmäßiger
+            Code-Reviews; Einführung von Jest- und Vitest-Tests zur nachhaltigen
+            Reduktion technischer Schulden.
+          </li>
+          <li>
+            Coaching von Junior-Entwickler:innen, Organisation von
+            Wissensaustausch-Sessions und Pair-Programming.
+          </li>
+          <li>
+            Pilotierung von AI-gestützten Tools (z. B. Copilot, ChatGPT) zur
+            Steigerung der Entwickler-Produktivität.
           </li>
         </ul>
       ),
@@ -157,17 +159,16 @@ export const RESUME_DATA: ResumeData = {
       description: (
         <ul className="list-inside list-disc space-y-0.5">
           <li>
-            Built, tested, and launched robust, scalable software solutions with
-            high availability, prioritizing reliability and peak performance
-            through modern development practices.
+            Planung, Implementierung und Rollout von skalierbaren Web- und
+            Mobile-Lösungen mit React, React Native und GraphQL.
           </li>
           <li>
-            Consistently enhanced legacy systems, integrating new
-            functionalities and delivering innovative, user-centric applications
-            aligned closely with strategic business objectives.
+            Kontinuierliche Modernisierung von Legacy-Systemen; Fokus auf
+            Nutzerzentrierung und Performancesteigerung.
           </li>
           <li>
-            Managed client relationships and project timelines independently
+            Selbstständiges Projekt- und Kundenmanagement inkl.
+            Anforderungs­analyse und Architekturdesign.
           </li>
         </ul>
       ),
@@ -176,26 +177,22 @@ export const RESUME_DATA: ResumeData = {
       company: "International Labour Organization",
       link: "https://www.ilo.org",
       badges: ["Remote", "Graphic Design", "UI/UX", "Frontend"],
-      title: "Grafikdesigner & Frontend-Entwickler",
+      title: "UI/UX- & Frontend-Entwickler",
       logo: null,
       start: "10.2019",
       end: "05.2022",
       description: (
         <ul className="list-inside list-disc space-y-0.5">
           <li>
-            Created cohesive visual identities and UI designs for global reports
-            and events, significantly enhancing brand consistency and user
-            engagement for initiatives like Global Social Protection Week and
-            the Global Flagship Programme.
+            Gestaltung konsistenter visueller Identitäten und moderner
+            UI-Designs für globale E-Reports.
           </li>
           <li>
-            Improved accessibility and modernized user experience for online
-            reports, meeting contemporary web standards and boosting user
-            interaction.
+            Verbesserung der Barrierefreiheit und User Journeys nach aktuellen
+            Web-Standards.
           </li>
           <li>
-            Collaborated with stakeholders across multiple countries and time
-            zones
+            Enge Zusammenarbeit mit interdisziplinären Stakeholdern weltweit
           </li>
         </ul>
       ),
@@ -211,17 +208,16 @@ export const RESUME_DATA: ResumeData = {
       description: (
         <ul className="list-inside list-disc space-y-0.5">
           <li>
-            Designed impactful marketing packages, including compelling print
-            materials, brochures, banners, and signage, significantly improving
-            brand visibility and market presence.
+            Konzeption und Gestaltung von Marketing-Packages (Broschüren,
+            Banner, Signage), was die Markenpräsenz signifikant steigerte.
           </li>
           <li>
-            Produced insightful trend boards and conducted market analysis to
-            identify emerging opportunities, enabling strategic business
-            decisions and capitalizing on industry shifts.
+            Erstellung von Trendboards und Durchführung von Marktanalysen zur
+            Identifikation neuer Chancen und strategischen Steuerung.
           </li>
           <li>
-            Managed multiple design projects simultaneously with tight deadlines
+            Steuerung mehrerer Design-Projekte parallel unter Einhaltung enger
+            Deadlines und Abstimmung mit Vertrieb, Produktion und Kunden.
           </li>
         </ul>
       ),
