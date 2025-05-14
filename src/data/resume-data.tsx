@@ -62,14 +62,15 @@ export const RESUME_DATA: ResumeData = {
   location: "Berlin, Deutschland",
   locationLink: "https://www.google.com/maps/place/Berlin,+Germany",
   about: "Frontend-Entwickler",
+  about: "Full-Stack Developer",
   summary: (
     <>
       <p>
-        Erfahrener Frontend-Entwickler mit über fünf Jahren praktischer
-        Erfahrung in React, Next.js, React Native, GraphQL und TypeScript.
-        Nachweisliche Erfolge in der ganzheitlichen Umsetzung von Produkten bei
-        Code-B, dabei komplexe Anforderungen in skalierbare Web- und
-        Mobile-Applikationen übersetzt.
+        Experienced Full-Stack Developer with over 5 years of hands-on
+        experience in React, Next.js, React Native, GraphQL, and TypeScript.
+        Proven track record of driving end-to-end product delivery at code-b,
+        translating complex requirements into scalable web and mobile
+        applications.
       </p>
       <p>
         Leidenschaft für konsistente visuelle Identitäten und ansprechende
@@ -118,46 +119,29 @@ export const RESUME_DATA: ResumeData = {
       title: "Frontend-Entwickler",
       logo: null,
       start: "06.2022",
-      end: null,
+      end: "04.2025",
       description: (
-        <ul className="list-inside list-disc space-y-1">
+        <ul className="list-inside list-disc space-y-0.5">
           <li>
-            Entwicklung responsiver, hochperformanter Web- und
-            Mobile-Anwendungen mit React, Next.js, React Native und TypeScript;
-            steigerte Nutzerengagement und Effizienz (u. a.{" "}
-            <a
-              className="underline hover:text-foreground/70"
-              href="https://thepioneer.de"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="The Pioneer"
-            >
-              thepioneer.de
-            </a>
-            ,{" "}
-            <a
-              className="underline hover:text-foreground/70"
-              href="https://tabletop-herald.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Tabletop Herald"
-            >
-              tabletop-herald.com
-            </a>
-            ).
+            Developed responsive and high-performing web and mobile
+            applications, significantly improving user engagement and
+            application efficiency using React, Next.js, React Native, and
+            TypeScript. Notable projects include thepioneer.de and
+            tabletop-herald.com.
           </li>
           <li>
-            Optimierung von CI/CD-Pipelines durch automatisierte Tests, was zu
-            schnelleren Deployments und höherer Stabilität führte.
+            Streamlined CI/CD pipelines, notably improving deployment efficiency
+            and enhancing application stability through automated testing.
           </li>
           <li>
-            Mentoring von Junior-Entwicklern und Durchführung gründlicher
-            Code-Reviews zur Verbesserung von Best Practices und Code-Qualität.
+            Supported junior developers through mentorship and thorough code
+            reviews, fostering better practices and improving overall code
+            quality.
           </li>
           <li>
-            Projektleitung von der Anforderungserfassung über Architekturdesign
-            bis hin zu Deployment und kontinuierlicher Weiterentwicklung in
-            Abstimmung mit Geschäfts- und Nutzerzielen.
+            Managed projects from requirements gathering and architecture design
+            to deployment and ongoing improvements, ensuring alignment with
+            business goals and user needs.
           </li>
         </ul>
       ),
@@ -171,20 +155,19 @@ export const RESUME_DATA: ResumeData = {
       start: "05.2016",
       end: "05.2022",
       description: (
-        <ul className="list-inside list-disc space-y-1">
+        <ul className="list-inside list-disc space-y-0.5">
           <li>
-            Konzeption, Implementierung, Test und Rollout robuster, skalierbarer
-            Softwarelösungen mit hoher Verfügbarkeit unter Nutzung moderner
-            Development-Practices.
+            Built, tested, and launched robust, scalable software solutions with
+            high availability, prioritizing reliability and peak performance
+            through modern development practices.
           </li>
           <li>
-            Kontinuierliche Modernisierung von Altsystemen, Integration neuer
-            Features und Entwicklung nutzerzentrierter Anwendungen im Einklang
-            mit strategischen Unternehmenszielen.
+            Consistently enhanced legacy systems, integrating new
+            functionalities and delivering innovative, user-centric applications
+            aligned closely with strategic business objectives.
           </li>
           <li>
-            Eigenständiges Management von Kundenbeziehungen und
-            Projektzeitplänen.
+            Managed client relationships and project timelines independently
           </li>
         </ul>
       ),
@@ -198,20 +181,21 @@ export const RESUME_DATA: ResumeData = {
       start: "10.2019",
       end: "05.2022",
       description: (
-        <ul className="list-inside list-disc space-y-1">
+        <ul className="list-inside list-disc space-y-0.5">
           <li>
-            Gestaltung konsistenter visueller Identitäten und UI-Designs für
-            globale Reports und Events (z. B. Global Social Protection Week,
-            Global Flagship Programme), steigerte Markenwiedererkennung und
-            Nutzerengagement.
+            Created cohesive visual identities and UI designs for global reports
+            and events, significantly enhancing brand consistency and user
+            engagement for initiatives like Global Social Protection Week and
+            the Global Flagship Programme.
           </li>
           <li>
-            Verbesserung der Barrierefreiheit und Modernisierung der
-            Nutzererfahrung bei Online-Reports nach zeitgemäßen Web-Standards.
+            Improved accessibility and modernized user experience for online
+            reports, meeting contemporary web standards and boosting user
+            interaction.
           </li>
           <li>
-            Zusammenarbeit mit Stakeholdern in verschiedenen Ländern und
-            Zeitzonen.
+            Collaborated with stakeholders across multiple countries and time
+            zones
           </li>
         </ul>
       ),
@@ -225,19 +209,19 @@ export const RESUME_DATA: ResumeData = {
       start: "01.2015",
       end: "12.2015",
       description: (
-        <ul className="list-inside list-disc space-y-1">
+        <ul className="list-inside list-disc space-y-0.5">
           <li>
-            Entwicklung wirkungsvoller Marketing-Packages (Printmaterialien,
-            Broschüren, Banner, Beschilderungen) zur Steigerung der
-            Markensichtbarkeit.
+            Designed impactful marketing packages, including compelling print
+            materials, brochures, banners, and signage, significantly improving
+            brand visibility and market presence.
           </li>
           <li>
-            Erstellung von Trend-Boards und Marktanalysen zur Identifikation
-            neuer Chancen und zur Unterstützung strategischer Entscheidungen.
+            Produced insightful trend boards and conducted market analysis to
+            identify emerging opportunities, enabling strategic business
+            decisions and capitalizing on industry shifts.
           </li>
           <li>
-            Gleichzeitige Betreuung mehrerer Design-Projekte unter engen
-            Deadlines.
+            Managed multiple design projects simultaneously with tight deadlines
           </li>
         </ul>
       ),

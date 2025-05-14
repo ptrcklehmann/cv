@@ -28,7 +28,7 @@ function BadgeList({ className, badges }: BadgeListProps) {
         <li key={badge}>
           <Badge
             variant="secondary"
-            className="align-middle text-[10px] leading-none print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
+            className="align-middle text-[12px] leading-none print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
           >
             {badge}
           </Badge>
@@ -49,7 +49,7 @@ interface WorkPeriodProps {
 function WorkPeriod({ start, end }: WorkPeriodProps) {
   return (
     <div
-      className="text-nowrap font-mono text-xs tabular-nums text-gray-600"
+      className="text-nowrap font-mono text-xs tabular-nums text-foreground/70"
       aria-label={`Employment period: ${start} to ${end ?? "Present"}`}
     >
       {start} - {end ?? "Present"}
@@ -68,7 +68,7 @@ interface CompanyLinkProps {
 function CompanyLink({ company, link }: CompanyLinkProps) {
   return (
     <a
-      className="text-sm font-medium text-foreground/90 hover:underline print:font-medium"
+      className="text-sm font-medium text-foreground/95 hover:underline print:font-medium"
       href={link}
       target="_blank"
       rel="noopener noreferrer"
@@ -91,7 +91,7 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
   const { company, link, badges, title, start, end, description } = work;
 
   return (
-    <Card className="py-1 print:py-0">
+    <Card className="py-1 print:py-0.5">
       <CardHeader className="print:space-y-0">
         <div className="flex items-center justify-between gap-x-2 text-base">
           <span className="text-md inline-flex items-center justify-center gap-x-1 font-semibold uppercase leading-none">
@@ -109,7 +109,7 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
       </CardHeader>
 
       <CardContent>
-        <div className="mt-1 text-pretty text-sm text-foreground/85 print:mt-1 print:text-[11px]">
+        <div className="mt-2 text-pretty text-sm text-foreground/75 print:mt-1 print:text-[11px]">
           {description}
         </div>
         <div className="mt-1">
