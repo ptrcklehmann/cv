@@ -146,7 +146,7 @@ export function Header() {
     <header className="flex items-center justify-between">
       <div className="flex-1">
         <h1
-          className="text-3xl/none font-bold uppercase text-muted-foreground"
+          className="text-3xl/none font-bold uppercase text-muted-foreground my-0!"
           id="resume-name"
         >
           {RESUME_DATA.name}
