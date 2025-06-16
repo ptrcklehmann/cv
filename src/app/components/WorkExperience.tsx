@@ -110,7 +110,7 @@ function WorkExperienceItem({ work }: WorkExperienceItemProps) {
         <div className="mt-2 text-pretty text-sm text-foreground/80 print:mt-1 print:text-[11px]">
           {description}
         </div>
-        <div className="mt-2">
+        <div>
           <BadgeList
             className="-mx-2 flex-wrap gap-1 sm:hidden"
             badges={badges}
