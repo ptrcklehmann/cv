@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - Resume`,
   description: RESUME_DATA.about,
   openGraph: {
+    url: baseSiteUrl,
     title: `${RESUME_DATA.name} - Resume`,
     description: RESUME_DATA.about,
     type: "profile",
     locale: "en_UK",
     siteName: "Patrick Lehmann - Resume",
-    url: "https://cv.ptrcklehmann.com",
     images: [
       {
         url: `${baseSiteUrl}opengraph-image`,

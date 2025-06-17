@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 import React from "react";
+import { baseSiteUrl } from "@/lib/config";
+import { Metadata } from "next";
 
 const geomanist = localFont({
   src: [
@@ -40,6 +42,10 @@ const operatorMono = localFont({
   ],
   variable: "--operator-mono" as const,
 });
+
+export const metadata: Metadata = {
+  metadataBase: baseSiteUrl,
+};
 
 export default function RootLayout({
   children,
