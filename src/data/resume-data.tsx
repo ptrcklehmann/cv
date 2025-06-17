@@ -126,12 +126,12 @@ export const RESUME_DATA: ResumeData = {
       start: "06.2022",
       end: "04.2025",
       description: (
-        <ul className="list-inside list-disc space-y-0.5 ">
+        <ul className="list-inside list-disc space-y-0.5">
           <li className="print:leading-relaxed">
             Delivered multiple production-ready web and mobile apps using React
             ecosystems, including{" "}
             <a
-              className="underline hover:text-foreground"
+              className="hover:text-foreground underline"
               href="https://thepioneer.de"
               target="_blank"
               rel="noopener noreferrer"
@@ -141,7 +141,7 @@ export const RESUME_DATA: ResumeData = {
             </a>{" "}
             (news platform) and{" "}
             <a
-              className="underline hover:text-foreground"
+              className="hover:text-foreground underline"
               href="https://tabletop-herald.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -208,7 +208,7 @@ export const RESUME_DATA: ResumeData = {
       company: "International Labour Organization (UN)",
       link: "https://www.ilo.org",
       badges: ["UI/UX", "Design Systems", "Figma", "HTML/CSS"],
-      title: "UI/Frontend Developer (Contract)",
+      title: "UI/Frontend Developer",
       logo: null,
       start: "10.2019",
       end: "05.2022",
