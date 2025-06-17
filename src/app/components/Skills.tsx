@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import { Section } from "@/components/ui/section";
-import { RESUME_DATA } from "@/data/resume-data";
 import { cn } from "@/lib/utils";
 
 type Skills = readonly string[];

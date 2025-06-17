@@ -1,3 +1,50 @@
 {
-  "extends": "next/core-web-vitals"
+    "extends": ["next", "plugin:@typescript-eslint/recommended"],
+    "rules": {
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "after-used",
+                "ignoreRestSiblings": true,
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_"
+            }
+        ],
+        "import/prefer-default-export": ["off"],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/jsx-curly-brace-presence": ["warn", { "props": "never", "children": "never" }],
+        "react/button-has-type": [
+            "error",
+            {
+                "button": true,
+                "submit": true,
+                "reset": true
+            }
+        ],
+        "react/display-name": ["off"],
+        "react/prop-types": ["off"],
+        "react/static-property-placement": ["error", "static public field"],
+        "quote-props": ["warn", "consistent-as-needed"],
+        "no-case-declarations": ["off"],
+        "no-async-promise-executor": ["off"]
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier",
+        "import"
+    ],
+    "overrides": [
+        {
+            "files": ["*.ts", "*.tsx"],
+            "rules": {
+                "@typescript-eslint/no-shadow": "error",
+                "no-shadow": "off",
+                "no-undef": "off",
+                "no-console": "error"
+            }
+        }
+    ]
 }

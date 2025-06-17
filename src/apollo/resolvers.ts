@@ -6,6 +6,7 @@ import { RESUME_DATA } from "../data/resume-data";
 export class MeResolver {
   @Query(() => Me)
   me(): Me {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return RESUME_DATA as any;
   }
 }

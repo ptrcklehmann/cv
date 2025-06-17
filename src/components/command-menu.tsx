@@ -14,9 +14,9 @@ import {
 import { CommandIcon } from "lucide-react";
 import { Button } from "./ui/button";
 
-interface Props {
+type Props = {
   links: { url: string; title: string }[];
-}
+};
 
 export const CommandMenu = ({ links }: Props) => {
   const [open, setOpen] = React.useState(false);
@@ -31,7 +31,7 @@ export const CommandMenu = ({ links }: Props) => {
     const down = (e: KeyboardEvent) => {
       if (e.key === "j" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
-        setOpen((open) => !open);
+        setOpen((o) => !o);
       }
     };
 
@@ -41,18 +41,18 @@ export const CommandMenu = ({ links }: Props) => {
 
   return (
     <>
-      <p className="fixed bottom-0 left-0 right-0 hidden border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden xl:block">
+      <p className="border-t-muted text-muted-foreground fixed right-0 bottom-0 left-0 hidden border-t bg-white p-1 text-center text-sm xl:block print:hidden">
         Press{" "}
-        <kbd className="pointer-events-none inline-flex select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[12px] font-medium leading-none text-muted-foreground">
+        <kbd className="bg-muted text-muted-foreground pointer-events-none inline-flex items-center gap-1 rounded border px-1.5 font-mono text-[12px] leading-none font-medium select-none">
           <span className="text-xs">{isMac ? "⌘" : "Ctrl"}</span>+J
         </kbd>{" "}
         to open the command menu
       </p>
       <Button
-        onClick={() => setOpen((open) => !open)}
+        onClick={() => setOpen((o) => !o)}
         variant="outline"
         size="icon"
-        className="fixed bottom-4 right-4 flex rounded-full shadow-2xl print:hidden xl:hidden"
+        className="fixed right-4 bottom-4 flex rounded-full shadow-2xl xl:hidden print:hidden"
         aria-label="Open command menu"
       >
         <CommandIcon className="my-6 size-6" />

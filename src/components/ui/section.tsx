@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-export interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {}
+export type SectionProps = React.HTMLAttributes<HTMLDivElement>;
 
 export function Section({ className, ...props }: SectionProps) {
   return (

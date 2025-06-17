@@ -36,7 +36,7 @@ type Project = {
   techStack: string[];
 };
 
-type ResumeData = {
+export type ResumeData = {
   name: string;
   initials: string;
   location: string;
