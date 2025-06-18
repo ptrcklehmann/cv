@@ -1,5 +1,8 @@
 {
-    "extends": ["next", "plugin:@typescript-eslint/recommended"],
+    "extends": [
+        "next",
+        "plugin:@typescript-eslint/recommended"
+    ],
     "rules": {
         "@typescript-eslint/no-unused-vars": [
             "error",
@@ -9,6 +12,25 @@
                 "ignoreRestSiblings": true,
                 "argsIgnorePattern": "^_",
                 "varsIgnorePattern": "^_"
+            }
+        ],
+        "import/order": [
+            "error",
+            {
+                "newlines-between": "always",
+                "alphabetize": { "order": "asc" },
+                "groups": [
+                    ["builtin", "external"],
+                    ["internal", "parent", "sibling", "index"],
+                    ["object", "type"]
+                ],
+                "pathGroups": [
+                    { "pattern": "react", "group": "external", "position": "before" },
+                    { "pattern": "@components/**", "group": "internal" },
+                    { "pattern": "@utils/**", "group": "internal" },
+                    { "pattern": "@lib/**", "group": "internal" },
+                    { "pattern": "@i18n/**", "group": "internal" }
+                ]
             }
         ],
         "import/prefer-default-export": ["off"],

@@ -1,18 +1,18 @@
 "use client";
 
+import { CommandIcon } from 'lucide-react';
 import * as React from "react";
 
+import { Button } from './ui/button';
 import {
-  CommandDialog,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  CommandSeparator,
-} from "@/components/ui/command";
-import { CommandIcon } from "lucide-react";
-import { Button } from "./ui/button";
+    CommandDialog,
+    CommandEmpty,
+    CommandGroup,
+    CommandInput,
+    CommandItem,
+    CommandList,
+    CommandSeparator,
+} from '@/components/ui/command';
 
 type Props = {
   links: { url: string; title: string }[];
