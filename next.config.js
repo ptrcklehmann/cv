@@ -5,7 +5,8 @@ module.exports = nextConfig;
 
 // Injected content via Sentry wizard below
 
-import { withSentryConfig } from '@sentry/nextjs';
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const withSentryConfig = require('@sentry/nextjs');
 
 module.exports = withSentryConfig(module.exports, {
     // For all available options, see:
