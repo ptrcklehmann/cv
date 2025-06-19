@@ -10,6 +10,7 @@ type Social = {
 
 type Education = {
     school: string;
+    link: string;
     degree: string;
     start: string;
     end: string | null;
@@ -99,12 +100,14 @@ export const RESUME_DATA: ResumeData = {
     education: [
         {
             school: 'President Antônio Carlos University',
+            link: 'https://unipac.br',
             degree: 'BSc in Systems Analysis and Development',
             start: '01.2006',
             end: '07.2011',
         },
         {
             school: 'Ironhack Berlin',
+            link: 'https://www.ironhack.com/de-en/web-development/berlin',
             degree: 'Full-Stack Web Development Bootcamp',
             start: '01.2021',
             end: '05.2021',
