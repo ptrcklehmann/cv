@@ -13,49 +13,62 @@ interface EducationPeriodProps {
  * Displays the education period in a consistent format
  */
 function EducationPeriod({ start, end }: EducationPeriodProps) {
-  return (
-    <div
-      className="text-foreground/70 font-mono text-xs text-nowrap tabular-nums sm:text-sm"
-      aria-label={`Period: ${start} to ${end}`}
-    >
-      {start} - {end}
-    </div>
-  );
+    return (
+        <div
+            className="text-foreground/70 font-mono text-xs leading-none text-nowrap tabular-nums sm:text-sm"
+            aria-label={`Period: ${start} to ${end}`}
+        >
+            {start} - {end}
+        </div>
+    );
+}
+
+interface SchoolLinkProps {
+    school: string;
+    link: string;
+}
+
+function SchoolLink({ school, link }: SchoolLinkProps) {
+    return (
+        <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground/90 leading-none font-medium hover:underline"
+            aria-label={`Visit ${school} website`}
+        >
+            <h3 id={`education-${school.toLowerCase().replace(/\s+/g, '-')}`}>{school}</h3>
+        </a>
+    );
 }
 
 interface EducationItemProps {
-  education: Education;
+    education: Education;
 }
 
 /**
  * Individual education card component
  */
 function EducationItem({ education }: EducationItemProps) {
-  const { school, start, end, degree } = education;
+    const { school, start, end, degree } = education;
 
-  return (
-    <Card>
-      <CardHeader>
-        <div className="flex items-center justify-between gap-x-2 text-base">
-          <h3
-            className="font-medium leading-none text-foreground/90"
-            id={`education-${school.toLowerCase().replace(/\s+/g, "-")}`}
-          >
-            {school}
-          </h3>
-          <EducationPeriod start={start} end={end} />
-        </div>
-      </CardHeader>
-      <CardContent
-        className="text-foreground/80 print:text-[12px]"
-        aria-labelledby={`education-${school
-          .toLowerCase()
-          .replace(/\s+/g, "-")}`}
-      >
-        {degree}
-      </CardContent>
-    </Card>
-  );
+    return (
+        <Card>
+            <CardHeader>
+                <div className="flex items-center justify-between gap-x-2 text-base">
+                    <SchoolLink school={school} link={education.link} />
+                    {/* Display period of education */}
+                    <EducationPeriod start={start} end={end} />
+                </div>
+            </CardHeader>
+            <CardContent
+                className="text-foreground/80 print:text-[12px]"
+                aria-labelledby={`education-${school.toLowerCase().replace(/\s+/g, '-')}`}
+            >
+                {degree}
+            </CardContent>
+        </Card>
+    );
 }
 
 interface EducationListProps {
