@@ -40,3 +40,5 @@ next-env.d.ts
 
 # cover letter
 **/cover-letter/
+# Sentry Config File
+.env.sentry-build-plugin

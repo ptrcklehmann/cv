@@ -1,5 +1,6 @@
 import './globals.css';
 
+import * as Sentry from '@sentry/nextjs';
 import { Analytics } from '@vercel/analytics/next';
 import { Metadata } from 'next';
 import localFont from 'next/font/local';
@@ -45,6 +46,9 @@ const operatorMono = localFont({
 
 export const metadata: Metadata = {
     metadataBase: baseSiteUrl,
+    other: {
+        ...Sentry.getTraceData(),
+    },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
