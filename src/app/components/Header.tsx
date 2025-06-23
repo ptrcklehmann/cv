@@ -147,44 +147,44 @@ function PrintContact({ contact, personalWebsiteUrl }: PrintContactProps) {
  */
 export function Header() {
   return (
-    <header className="flex items-center justify-between">
-      <div className="flex-1">
-        <h1
-          className="text-3xl/none font-bold uppercase text-muted-foreground my-0!"
-          id="resume-name"
-        >
-          {RESUME_DATA.name}
-        </h1>
-        <p
-          className="max-w-md text-pretty text-sm text-muted-foreground print:text-[12px]"
-          aria-labelledby="resume-name"
-        >
-          {RESUME_DATA.about}
-        </p>
+      <header role="banner" className="flex items-center justify-between">
+          <div className="flex-1">
+              <h1
+                  className="text-muted-foreground my-0! text-3xl/none font-bold uppercase"
+                  id="resume-name"
+              >
+                  {RESUME_DATA.name}
+              </h1>
+              <p
+                  className="text-muted-foreground max-w-md text-sm text-pretty print:text-[12px]"
+                  aria-labelledby="resume-name"
+              >
+                  {RESUME_DATA.about}
+              </p>
 
-        <LocationLink
-          location={RESUME_DATA.location}
-          locationLink={RESUME_DATA.locationLink}
-        />
+              <LocationLink
+                  location={RESUME_DATA.location}
+                  locationLink={RESUME_DATA.locationLink}
+              />
 
-        <ContactButtons
-          contact={RESUME_DATA.contact}
-          personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
-        />
+              <ContactButtons
+                  contact={RESUME_DATA.contact}
+                  personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
+              />
 
-        <PrintContact
-          contact={RESUME_DATA.contact}
-          personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
-        />
-      </div>
+              <PrintContact
+                  contact={RESUME_DATA.contact}
+                  personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
+              />
+          </div>
 
-      <Avatar className="size-28" aria-hidden="true">
-        <AvatarImage
-          alt={`${RESUME_DATA.name}'s profile picture`}
-          src={RESUME_DATA.avatarUrl}
-        />
-        <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
-      </Avatar>
-    </header>
+          <Avatar className="size-28" aria-hidden="true">
+              <AvatarImage
+                  alt={`${RESUME_DATA.name}'s profile picture`}
+                  src={RESUME_DATA.avatarUrl}
+              />
+              <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
+          </Avatar>
+      </header>
   );
 }

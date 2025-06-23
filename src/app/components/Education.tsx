@@ -81,24 +81,17 @@ interface EducationListProps {
  */
 export function Education({ education }: EducationListProps) {
   return (
-    <Section>
-      <h2
-        className="text-2xl font-bold uppercase text-muted-foreground"
-        id="education-section"
-      >
-        Education
-      </h2>
-      <div
-        className="space-y-4"
-        role="feed"
-        aria-labelledby="education-section"
-      >
-        {education.map((item) => (
-          <article key={item.school} role="article">
-            <EducationItem education={item} />
-          </article>
-        ))}
-      </div>
-    </Section>
+      <Section role="region" aria-label="Education section">
+          <h2 className="text-muted-foreground text-2xl font-bold uppercase" id="education-section">
+              Education
+          </h2>
+          <div className="space-y-4" role="feed" aria-labelledby="education-section">
+              {education.map((item) => (
+                  <article key={item.school} role="article">
+                      <EducationItem education={item} />
+                  </article>
+              ))}
+          </div>
+      </Section>
   );
 }

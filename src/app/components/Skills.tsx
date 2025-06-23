@@ -46,14 +46,11 @@ interface SkillsProps {
  */
 export function Skills({ skills, className }: SkillsProps) {
   return (
-    <Section className={className}>
-      <h2
-        className="text-2xl font-bold uppercase text-muted-foreground"
-        id="skills-section"
-      >
-        Skills
-      </h2>
-      <SkillsList skills={skills} aria-labelledby="skills-section" />
-    </Section>
+      <Section className={className} role="region">
+          <h2 className="text-muted-foreground text-2xl font-bold uppercase" id="skills-section">
+              Skills
+          </h2>
+          <SkillsList skills={skills} aria-labelledby="skills-section" />
+      </Section>
   );
 }

@@ -136,24 +136,17 @@ interface WorkExperienceProps {
  */
 export function WorkExperience({ work }: WorkExperienceProps) {
   return (
-    <Section>
-      <h2
-        className="text-2xl font-bold uppercase text-muted-foreground"
-        id="experience"
-      >
-        Experience
-      </h2>
-      <div
-        className="space-y-4 print:space-y-0"
-        role="feed"
-        aria-labelledby="experience"
-      >
-        {work.map((item) => (
-          <article key={`${item.company}-${item.start}`} role="article">
-            <WorkExperienceItem work={item} />
-          </article>
-        ))}
-      </div>
-    </Section>
+      <Section role="region">
+          <h2 className="text-muted-foreground text-2xl font-bold uppercase" id="experience">
+              Experience
+          </h2>
+          <div className="space-y-4 print:space-y-0" role="feed" aria-labelledby="experience">
+              {work.map((item) => (
+                  <article key={`${item.company}-${item.start}`} role="article">
+                      <WorkExperienceItem work={item} />
+                  </article>
+              ))}
+          </div>
+      </Section>
   );
 }
