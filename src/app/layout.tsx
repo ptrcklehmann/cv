@@ -1,6 +1,5 @@
 import './globals.css';
 
-import * as Sentry from '@sentry/nextjs';
 import { Analytics } from '@vercel/analytics/next';
 import { Metadata } from 'next';
 import localFont from 'next/font/local';
@@ -46,27 +45,12 @@ const operatorMono = localFont({
 
 export const metadata: Metadata = {
     metadataBase: baseSiteUrl,
-    other: {
-        ...Sentry.getTraceData(),
-    },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" className={`${geomanist.variable} ${operatorMono.variable}`}>
-            <body>
-                <style
-                    dangerouslySetInnerHTML={{
-                        __html: `
-            :where(h1) {
-              margin-block: 0.67em;
-              font-size: 2em;
-            }
-          `,
-                    }}
-                />
-                {children}
-            </body>
+            <body>{children}</body>
             <Analytics />
         </html>
     );

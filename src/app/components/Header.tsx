@@ -2,6 +2,7 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { RESUME_DATA } from "@/data/resume-data";
 
 interface LocationLinkProps {
@@ -34,18 +35,20 @@ interface SocialButtonProps {
 
 function SocialButton({ href, icon: Icon, label }: SocialButtonProps) {
   return (
-    <div role="listitem">
-      <Button className="size-8" variant="outline" size="icon" asChild>
-        <a
-          href={href}
-          aria-label={label}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Icon className="size-4" aria-hidden="true" />
-        </a>
-      </Button>
-    </div>
+      <div role="listitem">
+          <Tooltip>
+              <TooltipTrigger>
+                  <Button className="size-8" variant="outline" size="icon" asChild>
+                      <a href={href} aria-label={label} target="_blank" rel="noopener noreferrer">
+                          <Icon className="size-4" aria-hidden="true" />
+                      </a>
+                  </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                  <p>{label}</p>
+              </TooltipContent>
+          </Tooltip>
+      </div>
   );
 }
 
