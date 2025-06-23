@@ -1,7 +1,7 @@
-import { RESUME_DATA } from '../../data/resume-data';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Section } from '@/components/ui/section';
+import { RESUME_DATA } from "../../data/resume-data";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Section } from "@/components/ui/section";
 
 type ProjectTags = readonly string[];
 
@@ -34,7 +34,7 @@ function ProjectLink({ title, link }: ProjectLinkProps) {
                 />
             </a>
             <div className="hidden font-mono text-xs underline print:visible" aria-hidden="true">
-                {link.replace('https://', '').replace('www.', '').replace('/', '')}
+                {link.replace("https://", "").replace("www.", "").replace("/", "")}
             </div>
         </>
     );
@@ -100,7 +100,7 @@ function ProjectCard({ title, description, tags, link }: ProjectCardProps) {
 }
 
 interface ProjectsProps {
-    projects: (typeof RESUME_DATA)['projects'];
+    projects: (typeof RESUME_DATA)["projects"];
 }
 
 /**
@@ -126,7 +126,7 @@ export function Projects({ projects }: ProjectsProps) {
                             title={project.title}
                             description={project.description}
                             tags={project.techStack}
-                            link={'link' in project ? project.link?.href : undefined}
+                            link={"link" in project ? project.link?.href : undefined}
                         />
                     </article>
                 ))}

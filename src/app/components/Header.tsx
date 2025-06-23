@@ -1,8 +1,8 @@
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/button';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { RESUME_DATA } from "@/data/resume-data";
 
 interface LocationLinkProps {

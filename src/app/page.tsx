@@ -1,13 +1,13 @@
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
-import { Education } from './components/Education';
-import { Header } from './components/Header';
-import { Skills } from './components/Skills';
-import { Summary } from './components/Summary';
-import { WorkExperience } from './components/WorkExperience';
-import { CommandMenu } from '@/components/command-menu';
-import { RESUME_DATA } from '@/data/resume-data';
-import { baseSiteUrl } from '@/lib/config';
+import { Education } from "./components/Education";
+import { Header } from "./components/Header";
+import { Skills } from "./components/Skills";
+import { Summary } from "./components/Summary";
+import { WorkExperience } from "./components/WorkExperience";
+import { CommandMenu } from "@/components/command-menu";
+import { RESUME_DATA } from "@/data/resume-data";
+import { baseSiteUrl } from "@/lib/config";
 
 export const metadata: Metadata = {
     metadataBase: baseSiteUrl,
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
         url: baseSiteUrl,
         title: `${RESUME_DATA.name} - Resume`,
         description: RESUME_DATA.about,
-        type: 'profile',
-        locale: 'en_UK',
-        siteName: 'Patrick Lehmann - Resume',
+        type: "profile",
+        locale: "en_UK",
+        siteName: "Patrick Lehmann - Resume",
         images: [
             {
                 url: `${baseSiteUrl}opengraph-image`,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         ],
     },
     twitter: {
-        card: 'summary_large_image',
+        card: "summary_large_image",
         title: `${RESUME_DATA.name} - Resume`,
         description: RESUME_DATA.about,
         images: [`${baseSiteUrl}opengraph-image`],
@@ -46,7 +46,7 @@ function getCommandMenuLinks() {
     if (RESUME_DATA.personalWebsiteUrl) {
         links.push({
             url: RESUME_DATA.personalWebsiteUrl,
-            title: 'Personal Website',
+            title: "Personal Website",
         });
     }
 

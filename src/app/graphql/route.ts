@@ -1,12 +1,12 @@
-import 'reflect-metadata';
+import "reflect-metadata";
 
-import { ApolloServer } from '@apollo/server';
-import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
-import { startServerAndCreateNextHandler } from '@as-integrations/next';
-import { NextRequest } from 'next/server';
-import { buildSchema } from 'type-graphql';
+import { ApolloServer } from "@apollo/server";
+import { ApolloServerPluginLandingPageLocalDefault } from "@apollo/server/plugin/landingPage/default";
+import { startServerAndCreateNextHandler } from "@as-integrations/next";
+import { NextRequest } from "next/server";
+import { buildSchema } from "type-graphql";
 
-import { MeResolver } from '../../apollo/resolvers';
+import { MeResolver } from "../../apollo/resolvers";
 
 const schema = await buildSchema({
     resolvers: [MeResolver],

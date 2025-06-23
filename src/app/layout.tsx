@@ -1,46 +1,46 @@
-import './globals.css';
+import "./globals.css";
 
-import { Metadata } from 'next';
-import localFont from 'next/font/local';
+import { Metadata } from "next";
+import localFont from "next/font/local";
 
-import { ClientAnalytics } from '@/components/client-analytics';
-import { baseSiteUrl } from '@/lib/config';
+import { ClientAnalytics } from "@/components/client-analytics";
+import { baseSiteUrl } from "@/lib/config";
 
 const geomanist = localFont({
     src: [
         {
-            path: '../fonts/Geomanist-Regular.woff',
-            weight: '400',
-            style: 'normal',
+            path: "../fonts/Geomanist-Regular.woff",
+            weight: "400",
+            style: "normal",
         },
         {
-            path: '../fonts/Geomanist-Medium.woff',
-            weight: '500',
-            style: 'normal',
+            path: "../fonts/Geomanist-Medium.woff",
+            weight: "500",
+            style: "normal",
         },
         {
-            path: '../fonts/Geomanist-Bold.woff',
-            weight: '700',
-            style: 'normal',
+            path: "../fonts/Geomanist-Bold.woff",
+            weight: "700",
+            style: "normal",
         },
     ],
-    variable: '--geomanist' as const,
+    variable: "--geomanist" as const,
 });
 
 const operatorMono = localFont({
     src: [
         {
-            path: '../fonts/OperatorMono-Light.woff',
-            weight: '400',
-            style: 'normal',
+            path: "../fonts/OperatorMono-Light.woff",
+            weight: "400",
+            style: "normal",
         },
         {
-            path: '../fonts/OperatorMono-Medium.woff',
-            weight: '500',
-            style: 'normal',
+            path: "../fonts/OperatorMono-Medium.woff",
+            weight: "500",
+            style: "normal",
         },
     ],
-    variable: '--operator-mono' as const,
+    variable: "--operator-mono" as const,
 });
 
 export const metadata: Metadata = {

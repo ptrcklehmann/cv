@@ -1,6 +1,6 @@
-import { ReactNode, SVGProps, ReactElement } from 'react';
+import { ReactNode, SVGProps, ReactElement } from "react";
 
-import { GitHubIcon, LinkedInIcon } from '@/components/icons';
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 type Social = {
     name: string;
@@ -59,11 +59,11 @@ export type ResumeData = {
 };
 
 export const RESUME_DATA: ResumeData = {
-    name: 'Patrick Lehmann',
-    initials: 'PL',
-    location: 'Berlin, Germany CET',
-    locationLink: 'https://www.google.com/maps/place/Berlin,+Germany',
-    about: 'Frontend Developer',
+    name: "Patrick Lehmann",
+    initials: "PL",
+    location: "Berlin, Germany CET",
+    locationLink: "https://www.google.com/maps/place/Berlin,+Germany",
+    about: "Frontend Developer",
     summary: (
         <>
             <p className="print:leading-snug">
@@ -79,54 +79,54 @@ export const RESUME_DATA: ResumeData = {
             </p>
         </>
     ),
-    avatarUrl: 'https://avatars.githubusercontent.com/u/32590221?v=4',
-    personalWebsiteUrl: 'https://ptrcklehmann.com',
+    avatarUrl: "https://avatars.githubusercontent.com/u/32590221?v=4",
+    personalWebsiteUrl: "https://ptrcklehmann.com",
     contact: {
-        email: 'connect@ptrcklehmann.com',
-        tel: '+4915901345063',
+        email: "connect@ptrcklehmann.com",
+        tel: "+4915901345063",
         social: [
             {
-                name: 'GitHub',
-                url: 'https://github.com/ptrcklehmann',
+                name: "GitHub",
+                url: "https://github.com/ptrcklehmann",
                 icon: GitHubIcon,
             },
             {
-                name: 'LinkedIn',
-                url: 'https://www.linkedin.com/in/ptrcklehmann',
+                name: "LinkedIn",
+                url: "https://www.linkedin.com/in/ptrcklehmann",
                 icon: LinkedInIcon,
             },
         ],
     },
     education: [
         {
-            school: 'President Antônio Carlos University',
-            link: 'https://unipac.br',
-            degree: 'BSc in Systems Analysis and Development',
-            start: '01.2006',
-            end: '07.2011',
+            school: "President Antônio Carlos University",
+            link: "https://unipac.br",
+            degree: "BSc in Systems Analysis and Development",
+            start: "01.2006",
+            end: "07.2011",
         },
         {
-            school: 'Ironhack Berlin',
-            link: 'https://www.ironhack.com/de-en/web-development/berlin',
-            degree: 'Full-Stack Web Development Bootcamp',
-            start: '01.2021',
-            end: '05.2021',
+            school: "Ironhack Berlin",
+            link: "https://www.ironhack.com/de-en/web-development/berlin",
+            degree: "Full-Stack Web Development Bootcamp",
+            start: "01.2021",
+            end: "05.2021",
         },
     ],
     work: [
         {
-            company: 'code-b',
-            link: 'https://code-b.com',
-            badges: ['React', 'Next.js', 'React Native', 'TypeScript', 'GraphQL', 'CI/CD'],
-            title: 'Frontend Developer',
+            company: "code-b",
+            link: "https://code-b.com",
+            badges: ["React", "Next.js", "React Native", "TypeScript", "GraphQL", "CI/CD"],
+            title: "Frontend Developer",
             logo: null,
-            start: '06.2022',
-            end: '04.2025',
+            start: "06.2022",
+            end: "04.2025",
             description: (
                 <ul className="list-inside list-disc space-y-0.5">
                     <li className="print:leading-relaxed">
                         Delivered multiple production-ready web and mobile apps using React
-                        ecosystems, including{' '}
+                        ecosystems, including{" "}
                         <a
                             className="hover:text-foreground underline"
                             href="https://thepioneer.de"
@@ -135,8 +135,8 @@ export const RESUME_DATA: ResumeData = {
                             aria-label="ThePioneer"
                         >
                             ThePioneer.de
-                        </a>{' '}
-                        (news platform) and{' '}
+                        </a>{" "}
+                        (news platform) and{" "}
                         <a
                             className="hover:text-foreground underline"
                             href="https://tabletop-herald.com"
@@ -145,7 +145,7 @@ export const RESUME_DATA: ResumeData = {
                             aria-label="Tabletop Herald"
                         >
                             Tabletop Herald
-                        </a>{' '}
+                        </a>{" "}
                         (gaming community portal).
                     </li>
                     <li className="print:leading-relaxed">
@@ -168,13 +168,13 @@ export const RESUME_DATA: ResumeData = {
             ),
         },
         {
-            company: 'Freelance',
-            link: 'https://ptrcklehmann.com',
-            badges: ['TypeScript', 'React', 'React Native', 'GraphQL', 'Node.js'],
-            title: 'Full-Stack Developer',
+            company: "Freelance",
+            link: "https://ptrcklehmann.com",
+            badges: ["TypeScript", "React", "React Native", "GraphQL", "Node.js"],
+            title: "Full-Stack Developer",
             logo: null,
-            start: '05.2016',
-            end: '05.2022',
+            start: "05.2016",
+            end: "05.2022",
             description: (
                 <ul className="list-inside list-disc space-y-0.5">
                     <li className="print:leading-relaxed">
@@ -198,13 +198,13 @@ export const RESUME_DATA: ResumeData = {
             ),
         },
         {
-            company: 'International Labour Organization (UN)',
-            link: 'https://www.ilo.org',
-            badges: ['UI/UX', 'Design Systems', 'Figma', 'HTML/CSS'],
-            title: 'UI/Frontend Developer',
+            company: "International Labour Organization (UN)",
+            link: "https://www.ilo.org",
+            badges: ["UI/UX", "Design Systems", "Figma", "HTML/CSS"],
+            title: "UI/Frontend Developer",
             logo: null,
-            start: '10.2019',
-            end: '05.2022',
+            start: "10.2019",
+            end: "05.2022",
             description: (
                 <ul className="list-inside list-disc space-y-0.5">
                     <li className="print:leading-relaxed">
@@ -229,13 +229,13 @@ export const RESUME_DATA: ResumeData = {
             ),
         },
         {
-            company: 'Efficient Signer and Print Ltd',
-            link: 'https://efficientsigns.com/',
-            badges: ['Graphic Design', 'Print', 'Digital'],
-            title: 'Graphic Designer',
+            company: "Efficient Signer and Print Ltd",
+            link: "https://efficientsigns.com/",
+            badges: ["Graphic Design", "Print", "Digital"],
+            title: "Graphic Designer",
             logo: null,
-            start: '01.2015',
-            end: '12.2015',
+            start: "01.2015",
+            end: "12.2015",
             description: (
                 <ul className="list-inside list-disc space-y-0.5">
                     <li className="print:leading-relaxed">
@@ -256,27 +256,27 @@ export const RESUME_DATA: ResumeData = {
         },
     ],
     skills: [
-        'React',
-        'Next.js',
-        'React Native',
-        'TypeScript',
-        'Node.js',
-        'GraphQL',
-        'Headless CMS',
-        'REST API',
-        'SQL/MySQL',
-        'Git',
-        'CI/CD',
-        'Jest',
-        'Vitest',
-        'Docker',
-        'Xcode',
-        'Android Studio',
-        'Figma',
-        'HTML5',
-        'CSS3',
-        'Tailwind CSS',
-        'Agile/Scrum',
+        "React",
+        "Next.js",
+        "React Native",
+        "TypeScript",
+        "Node.js",
+        "GraphQL",
+        "Headless CMS",
+        "REST API",
+        "SQL/MySQL",
+        "Git",
+        "CI/CD",
+        "Jest",
+        "Vitest",
+        "Docker",
+        "Xcode",
+        "Android Studio",
+        "Figma",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Agile/Scrum",
     ],
     projects: [],
 } as const;

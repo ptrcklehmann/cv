@@ -1,5 +1,5 @@
-import { Section } from '../../components/ui/section';
-import { RESUME_DATA } from '@/data/resume-data';
+import { Section } from "../../components/ui/section";
+import { RESUME_DATA } from "@/data/resume-data";
 
 interface AboutProps {
     summary: typeof RESUME_DATA.summary;

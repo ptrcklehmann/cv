@@ -37,7 +37,7 @@ function SchoolLink({ school, link }: SchoolLinkProps) {
             className="text-foreground/90 leading-none font-medium hover:underline"
             aria-label={`Visit ${school} website`}
         >
-            <h3 id={`education-${school.toLowerCase().replace(/\s+/g, '-')}`}>{school}</h3>
+            <h3 id={`education-${school.toLowerCase().replace(/\s+/g, "-")}`}>{school}</h3>
         </a>
     );
 }
@@ -63,7 +63,7 @@ function EducationItem({ education }: EducationItemProps) {
             </CardHeader>
             <CardContent
                 className="text-foreground/80 print:text-[12px]"
-                aria-labelledby={`education-${school.toLowerCase().replace(/\s+/g, '-')}`}
+                aria-labelledby={`education-${school.toLowerCase().replace(/\s+/g, "-")}`}
             >
                 {degree}
             </CardContent>
