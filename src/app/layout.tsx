@@ -1,9 +1,9 @@
 import './globals.css';
 
-import { Analytics } from '@vercel/analytics/next';
 import { Metadata } from 'next';
 import localFont from 'next/font/local';
 
+import { ClientAnalytics } from '@/components/client-analytics';
 import { baseSiteUrl } from '@/lib/config';
 
 const geomanist = localFont({
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en" className={`${geomanist.variable} ${operatorMono.variable}`}>
             <body>{children}</body>
-            <Analytics />
+            <ClientAnalytics />
         </html>
     );
 }
