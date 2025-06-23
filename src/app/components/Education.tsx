@@ -81,7 +81,7 @@ interface EducationListProps {
  */
 export function Education({ education }: EducationListProps) {
   return (
-      <Section role="region" aria-label="Education section">
+      <Section aria-label="Education section">
           <h2 className="text-muted-foreground text-2xl font-bold uppercase" id="education-section">
               Education
           </h2>

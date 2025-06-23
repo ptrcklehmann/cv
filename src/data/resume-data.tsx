@@ -132,7 +132,7 @@ export const RESUME_DATA: ResumeData = {
                             href="https://thepioneer.de"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="ThePioneer"
+                            aria-label="ThePioneer.de"
                         >
                             ThePioneer.de
                         </a>{" "}

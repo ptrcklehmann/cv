@@ -136,7 +136,7 @@ interface WorkExperienceProps {
  */
 export function WorkExperience({ work }: WorkExperienceProps) {
   return (
-      <Section role="region">
+      <Section>
           <h2 className="text-muted-foreground text-2xl font-bold uppercase" id="experience">
               Experience
           </h2>
