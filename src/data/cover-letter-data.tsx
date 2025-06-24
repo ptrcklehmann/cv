@@ -1,23 +1,4 @@
-import { ReactNode } from "react";
-
-type CoverLetterData = {
-    name: string;
-    location: string;
-    locationLink: string;
-    about: string;
-    personalWebsiteUrl: string;
-    contact: {
-        email: string;
-        tel: string;
-    };
-    company: {
-        name: string;
-        location: string;
-    };
-    date: string;
-    greeting: ReactNode;
-    body: ReactNode;
-};
+import { CoverLetterData } from "@/lib/types";
 
 export const COVER_LETTER_DATA: CoverLetterData = {
     name: "Patrick Lehmann",
