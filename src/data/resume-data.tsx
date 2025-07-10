@@ -10,7 +10,7 @@ export const RESUME_DATA: ResumeData = {
     summary: (
         <>
             <p className="print:leading-snug">
-                Frontend Engineer specialising in React ecosystems with 5+ years of experience
+                Frontend Developer specialising in React ecosystems with 5+ years of experience
                 delivering scalable web and mobile applications.
             </p>
             <p className="print:leading-snug">
