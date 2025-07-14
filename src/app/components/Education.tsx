@@ -1,12 +1,13 @@
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
+import { TypographyH2 } from "@/components/ui/typography";
 import { RESUME_DATA } from "@/data/resume-data";
 
 type Education = (typeof RESUME_DATA)["education"][number];
 
 interface EducationPeriodProps {
-  start: Education["start"];
-  end: Education["end"];
+    start: Education["start"];
+    end: Education["end"];
 }
 
 /**
@@ -15,7 +16,7 @@ interface EducationPeriodProps {
 function EducationPeriod({ start, end }: EducationPeriodProps) {
     return (
         <div
-            className="text-foreground/70 font-mono text-xs leading-none text-nowrap tabular-nums sm:text-sm"
+            className="text-foreground/70 font-mono text-[12px] leading-none text-nowrap tabular-nums"
             aria-label={`Period: ${start} to ${end}`}
         >
             {start} - {end}
@@ -82,9 +83,7 @@ interface EducationListProps {
 export function Education({ education }: EducationListProps) {
   return (
       <Section aria-label="Education section">
-          <h2 className="text-muted-foreground text-2xl font-bold uppercase" id="education-section">
-              Education
-          </h2>
+          <TypographyH2 id="education-section">Education</TypographyH2>
           <div className="space-y-4" role="feed" aria-labelledby="education-section">
               {education.map((item) => (
                   <article key={item.school} role="article">
