@@ -75,7 +75,7 @@ export default function ResumePage() {
             >
                 <Header />
 
-                <div className="space-y-6 print:space-y-3">
+                <div className="space-y-6 print:space-y-4">
                     <Summary summary={RESUME_DATA.summary} />
 
                     <WorkExperience work={RESUME_DATA.work} />
