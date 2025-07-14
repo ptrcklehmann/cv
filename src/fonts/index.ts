@@ -24,12 +24,12 @@ export const geomanist = localFont({
 export const monolisa = localFont({
     src: [
         {
-            path: "./Monolisa-Regular.woff",
+            path: "./MonoLisa-Regular.woff",
             weight: "400",
             style: "normal",
         },
         {
-            path: "./Monolisa-Medium.woff",
+            path: "./MonoLisa-Medium.woff",
             weight: "500",
             style: "normal",
         },
