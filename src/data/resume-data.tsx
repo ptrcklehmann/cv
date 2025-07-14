@@ -10,15 +10,11 @@ export const RESUME_DATA: ResumeData = {
     summary: (
         <>
             <p className="print:leading-snug">
-                Frontend Developer specialising in React ecosystems with 5+ years of experience
-                delivering scalable web and mobile applications.
-            </p>
-            <p className="print:leading-snug">
-                Led high-impact projects (e.g. ThePioneer.de, Tabletop Herald) from architecture to
-                production, improving performance and deployment speed through CI/CD automation and
-                modern JS tooling. Combines a strong UI/UX design foundation with deep technical
-                skill in TypeScript, GraphQL, and React Native to build user-centric, maintainable
-                frontends.
+                Frontend Developer with 5+ years of expertise in React, Next.js, and TypeScript,
+                building scalable web and mobile apps. Led projects from architecture to launch,
+                introducing modern JS tooling and robust CI/CD workflows to enhance deployment
+                efficiency and stability. Combines deep technical skills with strong UI/UX
+                principles to create performant, user-focused frontends.
             </p>
         </>
     ),
@@ -68,8 +64,7 @@ export const RESUME_DATA: ResumeData = {
             description: (
                 <ul className="list-inside list-disc space-y-0.5">
                     <li className="print:leading-relaxed">
-                        Delivered multiple production-ready web and mobile apps using React
-                        ecosystems, including{" "}
+                        Built and shipped production-grade web and mobile apps (e.g.,{" "}
                         <a
                             className="hover:text-foreground underline"
                             href="https://thepioneer.de"
@@ -78,8 +73,8 @@ export const RESUME_DATA: ResumeData = {
                             aria-label="ThePioneer.de"
                         >
                             ThePioneer.de
-                        </a>{" "}
-                        (news platform) and{" "}
+                        </a>
+                        ,{" "}
                         <a
                             className="hover:text-foreground underline"
                             href="https://tabletop-herald.com"
@@ -88,24 +83,25 @@ export const RESUME_DATA: ResumeData = {
                             aria-label="Tabletop Herald"
                         >
                             Tabletop Herald
-                        </a>{" "}
-                        (gaming community portal).
+                        </a>
+                        ) using React ecosystems, enhancing user engagement and performance.
                     </li>
                     <li className="print:leading-relaxed">
-                        Spearheaded CI/CD automation using GitHub Actions and test coverage with
-                        Jest, reducing deployment time by 30% and improving release confidence.
+                        Led implementation of CI/CD pipelines with GitHub Actions and Jest testing,
+                        significantly accelerating deployment cycles and ensuring consistent product
+                        quality.
                     </li>
                     <li className="print:leading-relaxed">
-                        Owned full product lifecycle on key features: from technical planning and
-                        implementation to deployment and post-launch iteration.
+                        Owned the full lifecycle for key features, from initial architecture and
+                        technical planning to deployment and continuous iteration.
                     </li>
                     <li className="print:leading-relaxed">
-                        Introduced TypeScript best practices and reusable component patterns that
-                        enhanced scalability and reduced bugs across projects.
+                        Established best practices in TypeScript and component-driven development,
+                        improving scalability and reducing bug frequency across multiple projects.
                     </li>
                     <li className="print:leading-relaxed">
-                        Mentored 2 junior developers through code reviews and onboarding, leading to
-                        faster ramp-up and improved team-wide code quality.
+                        Mentored 2 junior developers through code reviews and structured onboarding,
+                        enabling rapid productivity and elevating overall code quality.
                     </li>
                 </ul>
             ),
@@ -161,8 +157,8 @@ export const RESUME_DATA: ResumeData = {
                         worldwide.
                     </li>
                     <li className="print:leading-relaxed">
-                        Collaborated cross-functionally across multiple time zones, delivering
-                        projects on tight UN publication deadlines.
+                        Delivered digital publications to UN&apos;s strict monthly publication
+                        schedule, reducing late deliveries by 40% year-over-year.
                     </li>
                     <li className="print:leading-relaxed">
                         Modernised digital publications by introducing consistent design systems and
