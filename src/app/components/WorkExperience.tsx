@@ -69,7 +69,7 @@ interface CompanyLinkProps {
 function CompanyLink({ company, link }: CompanyLinkProps) {
     return (
         <a
-            className="text-foreground mt-0.5 text-sm font-medium hover:underline print:font-medium"
+            className="text-foreground text-sm font-medium hover:underline print:font-medium"
             href={link}
             target="_blank"
             rel="noopener noreferrer"
